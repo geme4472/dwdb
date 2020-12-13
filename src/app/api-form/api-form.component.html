@@ -1,0 +1,43 @@
+<a [routerLink]="['/']" class="float-right btn btn-primary">back</a>
+
+<form [formGroup]="apiForm" (ngSubmit)="onSubmit()">
+    <h2>Drum Set Details</h2>
+
+        <label>
+            ID:
+        </label>
+        <input type="text" formControlName="dbID">
+
+        <label>
+            Series:
+        </label>
+        <input type="text" formControlName="series">
+
+        <label>
+          Color:
+        </label>
+        <input type="text" formControlName="color">
+  
+        <label>
+           Pieces:
+        </label>
+        <input type="text" formControlName="pieces">
+
+        <label>
+            Configuration:
+        </label>
+        <input type="text" formControlName="configuration">
+        
+        <label>
+            Style:
+        </label>
+        <input type="text" formControlName="style">
+
+        <label>
+            Price:
+        </label>
+        <input type="text" formControlName="price">
+
+  
+    <button type="submit">Submit</button>
+  </form>
